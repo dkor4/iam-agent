@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "codebuild:CreateProject",
+        "codebuild:StartBuild",
+        "codebuild:StartBuildBatch",
+        "iam:PassRole",
+        "iam:ListRoles"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "sagemaker:CreateNotebookInstance",
+        "sagemaker:CreatePresignedNotebookInstanceUrl",
+        "sagemaker:ListNotebookInstances",
+        "sagemaker:DescribeNotebookInstance",
+        "sagemaker:StopNotebookInstance",
+        "sagemaker:DeleteNotebookInstance",
+        "iam:PassRole",
+        "iam:ListRoles"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

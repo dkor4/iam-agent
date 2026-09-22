@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "iam:PassRole",
+        "ec2:DescribeInstances",
+        "ec2:RunInstances",
+        "ec2:CreateKeyPair",
+        "ec2:AssociateIamInstanceProfile"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}

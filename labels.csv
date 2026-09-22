@@ -1,0 +1,43 @@
+file,label,note
+privesc-AssumeRole-high-priv-policy.json,1,known privesc path
+privesc-CloudFormationUpdateStack.json,1,known privesc path
+privesc-codeBuildCreateProjectPassRole-policy.json,1,known privesc path
+privesc-ec2InstanceConnect-policy.json,1,known privesc path
+privesc-sageMakerCreateNotebookPassRole-policy.json,1,known privesc path
+privesc-sageMakerCreatePresignedNotebookURL-policy.json,1,known privesc path
+privesc-sageMakerCreateProcessingJobPassRole-policy.json,1,known privesc path
+privesc-sageMakerCreateTrainingJobPassRole-policy.json,1,known privesc path
+privesc-ssmSendCommand-policy.json,1,known privesc path
+privesc-ssmStartSession-policy.json,1,known privesc path
+privesc1-CreateNewPolicyVersion.json,1,known privesc path
+privesc10-PutUserPolicy.json,1,known privesc path
+privesc11-PutGroupPolicy.json,1,known privesc path
+privesc12-PutRolePolicy.json,1,known privesc path
+privesc13-AddUserToGroup.json,1,known privesc path
+privesc14-UpdatingAssumeRolePolicy.json,1,known privesc path
+privesc15-PassExistingRoleToNewLambdaThenInvoke.json,1,known privesc path
+privesc16-PassRoleToNewLambdaThenTriggerWithNewDynamo.json,1,known privesc path
+privesc17-EditExistingLambdaFunctionWithRole.json,1,known privesc path
+privesc18-PassExistingRoleToNewGlueDevEndpoint.json,1,known privesc path
+privesc19-UpdateExistingGlueDevEndpoint.json,1,known privesc path
+privesc2-SetExistingDefaultPolicyVersion.json,1,known privesc path
+privesc20-PassExistingRoleToCloudFormation.json,1,known privesc path
+privesc21-PassExistingRoleToNewDataPipeline.json,1,known privesc path
+privesc3-CreateEC2WithExistingInstanceProfile.json,1,known privesc path
+privesc4-CreateAccessKey.json,1,known privesc path
+privesc5-CreateLoginProfile.json,1,known privesc path
+privesc6-UpdateLoginProfile.json,1,known privesc path
+privesc7-AttachUserPolicy.json,1,known privesc path
+privesc8-AttachGroupPolicy.json,1,known privesc path
+privesc9-AttachRolePolicy.json,1,known privesc path
+fn1-privesc3-partial.json,1,exploitable but easy to miss (false-negative trap)
+fn1-passrole-star.json,1,exploitable but easy to miss (false-negative trap)
+fn2-exploitableResourceConstraint.json,1,exploitable but easy to miss (false-negative trap)
+fn3-exploitableConditionConstraint-policy-document.json,1,exploitable but easy to miss (false-negative trap)
+fn4-exploitableNotAction.json,1,exploitable but easy to miss (false-negative trap)
+fp1-allow-and-deny.json,0,looks risky but is NOT exploitable (false-positive trap)
+fp2-allow-all.json,0,looks risky but is NOT exploitable (false-positive trap)
+deny-all.json,,
+fp3-deny-iam.json,0,looks risky but is NOT exploitable (false-positive trap)
+fp4-nonExploitableResourceConstraint.json,0,looks risky but is NOT exploitable (false-positive trap)
+fp5-NonExploitableConditionConstraint.json,0,looks risky but is NOT exploitable (false-positive trap)
